@@ -61,3 +61,36 @@ header {
     }
   }
 }
+
+@include responsive(768px) {
+}
+
+@include responsive(375px) {
+  header {
+    .container {
+      h1 {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@include responsive(414px) {
+  header {
+    .container {
+      h1 {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@include responsive(320px) {
+  header {
+    .container {
+      h1 {
+        font-size: 12px;
+      }
+    }
+  }
+}
