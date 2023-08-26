@@ -65,6 +65,33 @@ header {
       }
     }
   }
+  .btn-instagram {
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+    transform: scale(1);
+    animation: pulse 2s infinite;
+    border-radius: 100px;
+    border: 1px solid var(--gray-600, #475467);
+    background: var(--gray-600, #475467);
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(245, 245, 245, 0.7);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+    }
+  }
 }
 
 @include responsive(768px) {
