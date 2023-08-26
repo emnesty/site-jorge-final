@@ -94,6 +94,16 @@ header {
 }
 
 @include responsive(768px) {
+  body {
+    background-image: url(/img/Background_Mobile.jpg);
+  }
+  header {
+    .container {
+      h1 {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 @include responsive(375px) {
@@ -130,6 +140,19 @@ header {
     .container {
       h1 {
         font-size: 12px;
+      }
+    }
+  }
+}
+
+@include responsive(470px) {
+  body {
+    background-image: url(/img/Background_Mobile.jpg);
+  }
+  header {
+    .container {
+      h1 {
+        font-size: 16px;
       }
     }
   }
