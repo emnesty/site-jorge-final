@@ -1,3 +1,8 @@
+body {
+  background-image: url(/img/Background.jpg);
+  background-repeat: no-repeat;
+}
+
 header {
   width: 100%;
   background-color: yellow;
@@ -5,9 +10,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 16px;
+    padding: 4px 4px;
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       color: black;
     }
   }
@@ -66,6 +71,9 @@ header {
 }
 
 @include responsive(375px) {
+  body {
+    background-image: url(/img/Background_Mobile.jpg);
+  }
   header {
     .container {
       h1 {
@@ -76,6 +84,9 @@ header {
 }
 
 @include responsive(414px) {
+  body {
+    background-image: url(/img/Background_Mobile.jpg);
+  }
   header {
     .container {
       h1 {
@@ -86,6 +97,9 @@ header {
 }
 
 @include responsive(320px) {
+  body {
+    background-image: url(/img/Background_Mobile.jpg);
+  }
   header {
     .container {
       h1 {
